@@ -9,10 +9,9 @@ from src.generation import generate_answer
 
 PDF_PATH = Path("data") / "aws_rag_guide.pdf"
 
-
-def build_rag_pipeline():
+def build_rag_pipeline(pdf_path: str | Path = PDF_PATH):
     # Load the PDF
-    documents = load_pdf(str(PDF_PATH))
+    documents = load_pdf(str(pdf_path)) 
 
     # Split PDF into chunks
     chunks = split_documents(documents)
