@@ -1,0 +1,9 @@
+faiss-cpu
+langchain-community
+langchain-huggingface
+langchain-ollama
+langchain-text-splitters
+pypdf
+rank-bm25
+sentence-transformers
+streamlit
